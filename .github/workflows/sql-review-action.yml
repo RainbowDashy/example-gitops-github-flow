@@ -27,4 +27,4 @@ jobs:
             FILE_PATTERN: "migrations/*.sql"
         with:
           entrypoint: bytebase-action
-          args: --url ${{ env.BYTEBASE_URL }} --service-account ${{ env.BYTEBASE_SERVICE_ACCOUNT }} --project ${{ env.BYTEBASE_PROJECT }} --targets ${{ env.BYTEBASE_TARGETS }} --file-pattern ${{ env.FILE_PATTERN }}
+          args: check --url ${{ env.BYTEBASE_URL }} --service-account ${{ env.BYTEBASE_SERVICE_ACCOUNT }} --project ${{ env.BYTEBASE_PROJECT }} --targets ${{ env.BYTEBASE_TARGETS }} --file-pattern ${{ env.FILE_PATTERN }}
