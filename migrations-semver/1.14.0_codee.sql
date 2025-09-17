@@ -1,0 +1,2 @@
+
+alter table IF EXISTS users ADD COLUMN IF NOT EXISTS codee VARCHAR(255) NOT NULL DEFAULT '';
