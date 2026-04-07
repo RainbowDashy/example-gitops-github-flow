@@ -1,4 +1,3 @@
 CREATE TABLE IF NOT EXISTS woerigjir (
     id VARCHAR(222)
 );
-
