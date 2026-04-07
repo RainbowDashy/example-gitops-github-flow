@@ -20,7 +20,7 @@ jobs:
       id-token: write
     runs-on: ubuntu-latest
     container:
-      image: bytebase/bytebase-action:49fb3049637f2553f23b130f4d9c1c706c426d756d6e4a3b7d2ac2f447aa194e
+      image: bytebase/bytebase-action@sha256:49fb3049637f2553f23b130f4d9c1c706c426d756d6e4a3b7d2ac2f447aa194e
     outputs:
       bytebase-plan: ${{ steps.set-output.outputs.plan }}
     steps:
@@ -56,7 +56,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: test
     container:
-      image: bytebase/bytebase-action:49fb3049637f2553f23b130f4d9c1c706c426d756d6e4a3b7d2ac2f447aa194e
+      image: bytebase/bytebase-action@sha256:49fb3049637f2553f23b130f4d9c1c706c426d756d6e4a3b7d2ac2f447aa194e
     steps:
       - uses: actions/checkout@v4
       - name: Exchange token
@@ -84,7 +84,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: prod
     container:
-      image: bytebase/bytebase-action:49fb3049637f2553f23b130f4d9c1c706c426d756d6e4a3b7d2ac2f447aa194e
+      image: bytebase/bytebase-action@sha256:49fb3049637f2553f23b130f4d9c1c706c426d756d6e4a3b7d2ac2f447aa194e
     steps:
       - uses: actions/checkout@v4
       - name: Exchange token
