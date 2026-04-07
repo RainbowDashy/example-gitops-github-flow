@@ -4,7 +4,7 @@ on:
     branches: ["wi-test"]
     paths: ["migrations/*.sql"]
 env:
-  BYTEBASE_URL: https://4932-103-137-247-74.ngrok-free.app/
+  BYTEBASE_URL: https://4932-103-137-247-74.ngrok-free.app
   BYTEBASE_WORKLOAD_IDENTITY: wi@db333.workload.bytebase.com
   BYTEBASE_PROJECT: projects/db333
 jobs:
